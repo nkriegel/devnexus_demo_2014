@@ -11,3 +11,8 @@
  *= require_self
  *= require_tree .
  */
+
+html {
+  font: 16px/1.5 'Open Sans', sans-serif;
+  line-height: 36px;
+}
