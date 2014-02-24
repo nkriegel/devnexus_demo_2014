@@ -17,7 +17,7 @@ describe CalculatorController do
   describe "POST 'calculate'" do
     it "multiplies the operands and then by 10" do
       post 'calculate', :op1 => "1", :op2 => "2"
-      expect(assigns(:result)).to eq(20)
+      expect(assigns(:result)).to eq(2)
     end
   end 
 
