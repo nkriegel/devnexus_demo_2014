@@ -12,6 +12,8 @@
  *= require_tree .
  */
 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400);
+
 html {
   font: 16px/1.5 'Open Sans', sans-serif;
   line-height: 36px;
