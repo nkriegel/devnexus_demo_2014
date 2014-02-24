@@ -1,0 +1,10 @@
+<h1>Welcome To DevNexus!</h1>
+<p>Improve this web application and deploy via our CI pipeline </p>
+<%= form_tag("/calculator/calculate", method: "post") do %>
+  <%= text_field_tag(:op1, nil, :class => 'operand') %>
+  <span class='operator'>X</span>
+  <%= text_field_tag(:op2, nil, :class => 'operand') %>
+  <%= submit_tag("multiply", :class => 'do_math') %>
+  <br/>
+  <%= text_field_tag('result', @result, :disabled => true, :class => 'result') %>
+<% end %>
