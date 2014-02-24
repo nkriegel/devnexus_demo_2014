@@ -19,6 +19,11 @@ describe CalculatorController do
       post 'calculate', :op1 => "1", :op2 => "2"
       expect(assigns(:result)).to eq(2)
     end
+    
+    it "displays error if the operands are not numbers" do
+      post 'calculate', :op1 => "a", :op2 => "boom"
+      expect(assigns(:results)).to eq('error')
+    end
   end 
 
 end
